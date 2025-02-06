@@ -1,6 +1,122 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Koulen;
+    src: url('fontes/Koulen.ttf');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('fontes/Inter.ttf');
+}
+
 *{
     padding: 0px;
     margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+section.PT2{
+    background-color:  #011759;
+}
+
+div#containerPT2{
+    margin: 0 auto;
+    width: 1440px;
+    background-image: url("imagens/Parte-2/Rectangle_8.png");
+}
+
+
+div#containerPT2-1{
+    width: 1438px;
+
+    background-image: url("imagens/Parte-2/bgTvLeao_Home_1.png");
+    background-repeat: no-repeat;
+    border: 0.01px dashed transparent;
+}
+
+h2{
+    font-family: Koulen;
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 0px 623px;
+    margin-top: 107px;
+}
+
+ul#ulPT2{
+    margin: 199.49px 200px;
+}
+
+ul#ulPT2>li{
+    color: white;
+    margin-bottom: 16px;
+}
+
+details > summary {
+    display: flex;
+    width: 1040px;
+    height: 80px;
+    background-color: #0E1116;
+    border: none;
+    cursor: pointer;
+    list-style: none;
+    justify-content: space-between;
+}
+
+details > summary > h3{
+    margin: 27px 0px 0px 40.04px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34px;
+    width: 424.79px;
+    height: 38.63px;
+
+}
+
+details > p {
+    background-color: #0E1116;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 21px 80px 31px 40.04px; 
+}
+
+details:last-of-type summary {
+    list-style: none;
+    &::after {
+      content: url("imagens/Parte-2/botao-abrir.png");
+      width: 36.03px;
+      height: 36px;
+      margin: 22px 24.03px 0px 0px;
+}
+[open] &::after {
+    content: url("imagens/Parte-2/botao-fechar.png");
+}
+}
+
+h2#imagens{
+    margin-top: 264px;
+}
+
+div#containerPT2-2{
+    width: 1439px;
+    background-color: #011759;
+    background-image: url("imagens/Parte-2/bgTvLeao_Home_2.png");
+    margin-top: 53.93px;
+    display: flex;
+}
+
+div#containerIMGs{
+    display: flex;
+    margin: 50px auto;
+    gap: 27px;
+    width: 1240.76px;
+    height: 723.71px; 
 }
